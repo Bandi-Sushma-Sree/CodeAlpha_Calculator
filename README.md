@@ -55,6 +55,6 @@ Calculator/
 💻 Setup
 To run the project locally:
 - Clone this repository:
-git clone https://github.com/Bandi-Sushma-Sree/CodeAlpha_Calculator
+git clone https://github.com/Bandi-Sushma-Sree/Basic_Calculator
 - Open index.html in your browser.
 
