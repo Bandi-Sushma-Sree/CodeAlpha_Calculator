@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+  
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h2 class="calculator-title">Calculator</h2>
+            
+            <div class="display" id="display">0</div>
+            
+            <div class="row g-2">
+                <div class="col-6">
+                    <button class="btn btn-calculator btn-clear w-100" onclick="clearDisplay()">Clear</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-calculator btn-operator w-100" onclick="deleteLast()">⌫</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-calculator btn-operator w-100" onclick="appendToDisplay('/')">÷</button>
+                </div>
+            </div>
+            
+            <div class="row g-2">
+                <div class="col-3">
+                    <button class="btn btn-calculator btn-number w-100" onclick="appendToDisplay('7')">7</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-calculator btn-number w-100" onclick="appendToDisplay('8')">8</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-calculator btn-number w-100" onclick="appendToDisplay('9')">9</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-calculator btn-operator w-100" onclick="appendToDisplay('*')">×</button>
+                </div>
+            </div>
+            
+            <div class="row g-2">
+                <div class="col-3">
+                    <button class="btn btn-calculator btn-number w-100" onclick="appendToDisplay('4')">4</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-calculator btn-number w-100" onclick="appendToDisplay('5')">5</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-calculator btn-number w-100" onclick="appendToDisplay('6')">6</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-calculator btn-operator w-100" onclick="appendToDisplay('-')">−</button>
+                </div>
+            </div>
+            
+            <div class="row g-2">
+                <div class="col-3">
+                    <button class="btn btn-calculator btn-number w-100" onclick="appendToDisplay('1')">1</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-calculator btn-number w-100" onclick="appendToDisplay('2')">2</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-calculator btn-number w-100" onclick="appendToDisplay('3')">3</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-calculator btn-operator w-100" onclick="appendToDisplay('+')">+</button>
+                </div>
+            </div>
+            
+            <div class="row g-2">
+                <div class="col-6">
+                    <button class="btn btn-calculator btn-zero w-100" onclick="appendToDisplay('0')">0</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-calculator btn-number w-100" onclick="appendToDisplay('.')">.</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-calculator btn-equals w-100" onclick="calculateResult()">=</button>
+                </div>
+            </div>
+            
+            <div class="keyboard-hint">
+                💡 Keyboard support: Numbers, +, -, *, /, Enter, Escape, Backspace
+            </div>
+        </div>
+    </div>
+
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
